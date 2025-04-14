@@ -1,0 +1,8 @@
+Steps:
+
+- Use the previous script to get the links
+- Copy the links to a file
+- Use cookie.txt extention to download the cookies for the google account
+- Use
+-> aria2c --load-cookies=classroom.google.com_cookies.txt -i links.txt --log=downloads.log -d ./ethicsNotes
+-> -d is resulting directory

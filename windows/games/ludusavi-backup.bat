@@ -15,7 +15,8 @@ set saveLocation=%USERPROFILE%\ludusavi-backup\ludusavi-backup.log
 
 echo Backing up the games
 
-ludusavi backup --force --compression bzip2 --compression-level 9 --cloud-sync --sort status >> %saveLocation%
+ludusavi backup --force --compression bzip2 --compression-level 9 --sort status >> %saveLocation%
+ludusavi cloud upload --force
 
 echo Done. Logs can be found at %saveLocation%
 
